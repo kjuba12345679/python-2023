@@ -1,0 +1,21 @@
+siema = "siema mordeczko miło cię widieć"
+hasło = "123"
+
+
+print("witaj")
+x = input("wpisz hasło: ")
+if x != hasło:
+    print("błęde hasło")
+elif x == hasło:
+    print(siema)
+    while x != hasło:
+        y = input("czy chcesz spróbować ponownie? ")
+        if  y == "tak":
+            x = input("wpisz hasło: ")
+            if x == hasło:
+                print(siema)
+        elif y == "nie":
+            print("może kiedy indziej")
+            break
+        elif y != "tak" or "nie":
+            print("przepraszam nie rozumiem")
